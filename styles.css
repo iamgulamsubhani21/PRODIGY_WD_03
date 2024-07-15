@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: black;
+    font-family: 'Amasis MT Pro Black';
+}
+
+.container {
+    text-align: center;
+}
+
+.stopwatch {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+#start {
+    background-color: #0a7a48;
+    color: white;
+}
+
+#pause {
+    background-color: #9e9710;
+    color: white;
+}
+
+#reset {
+    background-color: #F44336;
+    color: white;
+}
+
+#lap {
+    background-color: #008CBA;
+    color: white;
+}
+
+.controls button:hover {
+    opacity: 0.8;
+}
+
+.laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.laps li {
+    background: #f1f1f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
